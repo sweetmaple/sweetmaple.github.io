@@ -1,0 +1,84 @@
+<%@ page contentType="text/html;charset=UTF-8" language="java" pageEncoding="utf-8" %>
+<%@ include file="/include/common.jsp" %>
+<%--特殊征缴--%>
+<div id="busiForm">
+    <input id="pdfKey" name="pdfKey" class="mini-hidden" type="hidden"/>
+    <input id="ywhzlsh" name="ywhzlsh" class="mini-hidden" type="hidden"/>
+
+    <table id="hfdyqkqForm" class="form-table">
+        <tbody>
+        <tr>
+            <td class="col2-label"></td>
+            <td class="col2-input"></td>
+            <td class="col2-label"></td>
+            <td class="col2-input">
+                <a id="btn_query" href="JavaScript:;" class="layui-btn btn_bg">查询</a>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+    <div class="layui-form">
+        <table class="layui-table">
+            <thead>
+            <tr>
+                <th colspan="2" style="text-align: center">业务种类</th>
+                <th style="text-align: center">笔数</th>
+                <th style="text-align: center">金额</th>
+            </tr>
+            </thead>
+            <tbody align="center">
+            <tr>
+                <td colspan="2">按项目参保(工伤)</td>
+                <td>
+                    <input name="axmcbgsBs" class="mini-textbox asLabel" readonly/>
+                </td>
+                <td>
+                    <input name="axmcbgsJe" class="mini-textbox asLabel" readonly/>
+                </td>
+            </tr>
+            <tr>
+                <td rowspan="2">特殊缴费</td>
+                <td>非按月缴费业务</td>
+                <td>
+                    <input name="fayjfywBs" class="mini-textbox asLabel" readonly/>
+                </td>
+                <td>
+                    <input name="fayjfywJe" class="mini-textbox asLabel" readonly/>
+                </td>
+            </tr>
+            <tr>
+                <td>欠费清欠缴费业务</td>
+                <td>
+                    <input name="qfqqjfywBs" class="mini-textbox asLabel" readonly/>
+                </td>
+                <td>
+                    <input name="qfqqjfywJe" class="mini-textbox asLabel" readonly/>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">合计</td>
+                <td>
+                    <input name="hjBs" class="mini-textbox asLabel" readonly/>
+                </td>
+                <td>
+                    <input name="hjJe" class="mini-textbox asLabel" readonly/>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+    <table class="form-table">
+        <tbody>
+        <tr>
+            <td class="col2-label">
+                <a id="btn_save" href="JavaScript:;" class="layui-btn btn_bg">提交</a>
+            </td>
+            <td class="col2-input"></td>
+            <td class="col2-label"></td>
+            <td class="col2-input">
+                <a id="btn_print" href="JavaScript:;" class="layui-btn btn_bg">打印汇总表</a>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+</div>
